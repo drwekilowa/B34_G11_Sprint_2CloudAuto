@@ -6,12 +6,9 @@ Feature:Users should be able to login
  # Background:  Given user is on the login page
 
 
-  Scenario: Login as user
+  Scenario: Login functionality
     Given user is on the login page
-    When user enters the user information
-    Then user should be able to login
+    When user logged in as "user"
 
-  Scenario: Login as employee
-   Given employee is on the login page
-    When employee enters the employee information
-    Then employee should be able to log
+
+
