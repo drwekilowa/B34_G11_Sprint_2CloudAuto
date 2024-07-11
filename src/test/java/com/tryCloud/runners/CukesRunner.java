@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature",
         glue = "com/tryCloud/step_definitions",
         dryRun = true,
-        tags = "",
+        tags = "@B34G11-158",
         // monochrome = true,
         publish = true
 )
