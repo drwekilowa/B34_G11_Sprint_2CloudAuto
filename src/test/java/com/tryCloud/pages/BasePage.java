@@ -52,4 +52,6 @@ public class BasePage {
     @FindBy(xpath = "//div[@class='menutoggle']")
     public WebElement userIcon;
 
+    //
+
 }
