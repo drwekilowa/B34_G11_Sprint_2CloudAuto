@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
-        features = "src/test/resources/Features/US005_CalendarModuleFunctionality.feature",
+        features = "src/test/resources/Features",
         glue = "com/tryCloud/step_definitions",
         dryRun = false,
         tags = "",
