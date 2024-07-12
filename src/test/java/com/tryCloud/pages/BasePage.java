@@ -16,7 +16,7 @@ public abstract class BasePage {
     @FindBy(xpath = "//li[@data-id='files']")
     public WebElement fileModule;
 
-// this method only useful module links
+// this method is only useful for module links
     public void dynamicLinkElement(String text){
 
         String locator ="//a[@aria-label=('"+text+"')]";
