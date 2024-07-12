@@ -54,7 +54,7 @@ public abstract class BasePage {
     @FindBy(xpath = "//div[@class='menutoggle']")
     public WebElement userIcon;
 
-// this method only useful module links
+// this method is only useful for module links
     public void dynamicLinkElement(String text){
 
         String locator ="//a[@aria-label=('"+text+"')]";
