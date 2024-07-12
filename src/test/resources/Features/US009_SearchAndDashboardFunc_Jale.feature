@@ -1,6 +1,11 @@
 @B34G11-158
 Feature: Default
 
+	Background:
+		Given user is on the login page
+		When user logged in as "user"
+		
+
 	
 	@B34G11-150
 	Scenario Outline: US009 Verify user can search file typing its name through the magnifying glass icon.
