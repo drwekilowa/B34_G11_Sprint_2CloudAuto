@@ -3,6 +3,7 @@ Feature:Users should be able to login
   As a user, I should be able to login with correct credentials to different accounts. And dashboard should be displayed.
   Accounts are: user, employee
 
+  US005_CalendarModuleFunctionality_Sevinj
   Background:  Given user is on the login page
 
 
