@@ -17,7 +17,7 @@ US005_CalendarModuleFunctionality_Sevinj
         features = "src/test/resources/Features/Login.feature",
         glue = "com/tryCloud/step_definitions",
         dryRun = true,
-        tags = "",
+        tags = "@B34G11-158",
         // monochrome = true,
         publish = true
 )
