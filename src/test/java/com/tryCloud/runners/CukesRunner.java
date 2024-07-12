@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
-        features = "src/test/resources",
+        features = "src/test/resources/Features/Login.feature",
         glue = "com/tryCloud/step_definitions",
         dryRun = false,
         tags = "",
