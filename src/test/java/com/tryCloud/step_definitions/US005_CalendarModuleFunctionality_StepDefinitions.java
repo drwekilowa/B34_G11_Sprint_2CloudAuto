@@ -39,14 +39,12 @@ public class US005_CalendarModuleFunctionality_StepDefinitions {
     }
 
 
-
     // @B34G11-183
     //  Scenario: US005_TC3_Verify user can display monthly calendar view
 
     @When("user is on Weekly calendar view")
     public void user_is_on_weekly_calendar_view() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
     @When("user clicks on the Monthly button")
     public void user_clicks_on_the_monthly_button() {
@@ -56,7 +54,6 @@ public class US005_CalendarModuleFunctionality_StepDefinitions {
     public void user_can_see_displayed_monthly_calendar_view() {
 
     }
-
 
 
     // @B34G11-184
