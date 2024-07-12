@@ -101,4 +101,21 @@ public class Login_StepDefinitions {
 
     }
 
-}
+    @When("user enters the user information")
+    public void userEntersTheUserInformation() {
+    }
+
+    @Then("user should be able to login")
+    public void userShouldBeAbleToLogin() {
+    }
+
+
+
+    @When("user enters the employee information")
+    public void userEntersTheEmployeeInformation() {
+    }
+
+    @Then("user should be able to log")
+    public void userShouldBeAbleToLog() {
+    }
+  }
