@@ -62,8 +62,8 @@ public class US005_CalendarModuleFunctionality_StepDefinitions {
     // @B34G11-184
     //  Scenario: US005_TC4_Verify user can create a new event under the Calendar module
 
-    @When("user is on the Calendar module")
-    public void user_is_on_the_calendar_module() {
+    @When("user is on the Calendar page")
+    public void user_is_on_the_calendar_page() {
 
     }
 
