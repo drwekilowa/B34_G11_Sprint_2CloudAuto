@@ -15,21 +15,21 @@ Feature: Default
 
   @B34G11-182
   Scenario: US005_TC2_Verify user can display weekly calendar view
-    When user clicks on the Calendar module
-    And user clicks on the Calendar Menu button
-    Then user can display Weekly calendar view
+    When user is on Daily calendar view
+    And user clicks on the Weekly button
+    Then user can see displayed Weekly calendar view
 
 
   @B34G11-183
   Scenario: US005_TC3_Verify user can display monthly calendar view
-    When user clicks on the Calendar module
-    And user clicks on the Calendar Menu button
-    Then user can display Weekly calendar view
+    When user is on Weekly calendar view
+    And user clicks on the Monthly button
+    Then user can see displayed Monthly calendar view
 
 
   @B34G11-184
   Scenario: US005_TC4_Verify user can create a new event under the Calendar module
-    When user clicks on the Calendar module
+    When user is on the Calendar module
     Then user clicks on the New event button
     Then user passes event name in Event title input
     And user selects timezone from from timezone dropdown
