@@ -64,6 +64,11 @@ public class US005_CalendarModuleFunctionality_StepDefinitions {
 
     }
 
+    @Then("user checks personal radio button")
+    public void user_checks_personal_radio_button() {
+
+    }
+
     @Then("user clicks on the New event button")
     public void user_clicks_on_the_new_event_button() {
 
@@ -72,18 +77,15 @@ public class US005_CalendarModuleFunctionality_StepDefinitions {
     public void user_passes_event_name_in_event_title_input() {
 
     }
-    @Then("user selects timezone from from timezone dropdown")
-    public void user_selects_timezone_from_from_timezone_dropdown() {
+    @Then("user selects from event date and time")
+    public void user_selects_from_event_date_and_time() {
 
     }
-    @Then("user selects timezone from to timezone dropdown")
-    public void user_selects_timezone_from_to_timezone_dropdown() {
+    @Then("user selects to event date and time")
+    public void user_selects_to_event_date_and_time() {
 
     }
-    @Then("user checks the All day box")
-    public void user_checks_the_all_day_box() {
 
-    }
     @Then("user clicks to the Save button")
     public void user_clicks_to_the_save_button() {
 
@@ -92,6 +94,5 @@ public class US005_CalendarModuleFunctionality_StepDefinitions {
     public void user_should_be_able_to_create_a_new_event_under_the_calendar_module_and_see_it_on_the_related_day_through_the_monthly_calendar_view() {
 
     }
-
 
 }
