@@ -13,11 +13,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
-US005_CalendarModuleFunctionality_Sevinj
-        features = "src/test/resources/Features/Login.feature",
+        features = "src/test/resources/Feature",
         glue = "com/tryCloud/step_definitions",
         dryRun = true,
-        tags = "@B34G11-158",
+        tags = "@B34G11-169",
         // monochrome = true,
         publish = true
 )

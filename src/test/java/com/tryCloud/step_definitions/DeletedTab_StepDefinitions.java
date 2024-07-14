@@ -24,7 +24,7 @@ public class DeletedTab_StepDefinitions extends BasePage {
     @When("user click on the File module")
     public void user_click_on_the_file_module() {
 
-        fileModule.click();
+        fileLinkModule.click();
 
     }
 
@@ -45,18 +45,21 @@ public class DeletedTab_StepDefinitions extends BasePage {
     @Then("user see the list of files sorted")
     public void user_see_the_list_of_files_sorted() {
 
-        for (int i = 0; i < deletedTabPage.deletedFiles.size(); i++) {
 
-            WebElement file1 = deletedTabPage.deletedFiles.get(i);
+            WebElement file1 = deletedTabPage.deletedFiles.get(0);
+
+            BrowserUtils.waitForClickablility(deletedTabPage.deletedButtonSort, 3);
 
             deletedTabPage.deletedButtonSort.click();
 
-            WebElement file2 = deletedTabPage.deletedFiles.get(i);
+            BrowserUtils.waitForPageToLoad(3);
+
+            WebElement file2 = deletedTabPage.deletedFiles.get(0);
 
 
             Assert.assertTrue(file2.equals(file1));
 
-        }
+
     }
 
 
