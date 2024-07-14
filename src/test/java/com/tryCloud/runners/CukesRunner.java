@@ -13,13 +13,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
-
-        features = "src/test/resources/Features",
-
-      
+        features = "src/test/resources/Feature",
         glue = "com/tryCloud/step_definitions",
-        dryRun = false,
-        tags = "@B34G11-158",
+        dryRun = true,
+        tags = "@B34G11-169",
         // monochrome = true,
         publish = true
 )
