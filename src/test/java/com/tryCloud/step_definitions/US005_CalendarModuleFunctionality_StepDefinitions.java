@@ -2,6 +2,7 @@ package com.tryCloud.step_definitions;
 
 import com.tryCloud.pages.BasePage;
 import com.tryCloud.pages.CalendarModulePage;
+import com.tryCloud.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -23,6 +24,7 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
     @Then("user can display Daily calendar view")
     public void user_can_display_daily_calendar_view() {
         dayButton.click();
+        BrowserUtils.waitFor(3);
 
     }
 
@@ -32,11 +34,15 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
 
     @When("user is on Daily calendar view")
     public void user_is_on_daily_calendar_view() {
+        calendarLinkModule.click();
+        calendarMenuButton.click();
+        dayButton.click();
 
     }
     @When("user clicks on the Weekly button")
     public void user_clicks_on_the_weekly_button() {
         weekButton.click();
+        BrowserUtils.waitFor(3);
     }
 
     @Then("user can see displayed Weekly calendar view")
@@ -50,11 +56,15 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
 
     @When("user is on Weekly calendar view")
     public void user_is_on_weekly_calendar_view() {
+        calendarLinkModule.click();
+        calendarMenuButton.click();
+        weekButton.click();
 
     }
     @When("user clicks on the Monthly button")
     public void user_clicks_on_the_monthly_button() {
         monthButton.click();
+        BrowserUtils.waitFor(3);
 
     }
     @Then("user can see displayed Monthly calendar view")

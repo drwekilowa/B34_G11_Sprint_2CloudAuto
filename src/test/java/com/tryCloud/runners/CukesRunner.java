@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/Features",
         glue = "com/tryCloud/step_definitions",
-        dryRun = true,
+        dryRun = false,
         tags = "",
         // monochrome = true,
         publish = true

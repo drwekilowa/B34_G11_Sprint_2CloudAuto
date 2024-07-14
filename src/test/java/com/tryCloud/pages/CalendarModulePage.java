@@ -17,16 +17,16 @@ public class CalendarModulePage {
     @FindBy(xpath = "//a[@aria-label='Calendar']")
     public WebElement calendarLinkModule;
 
-    @FindBy(xpath = "//button[@class='icon action-item__menutoggle icon-view-week']")
+    @FindBy(xpath = "//button[@aria-label='Actions']")
     public WebElement calendarMenuButton;
 
-    @FindBy(linkText = "Day")
+    @FindBy(xpath = "//li[@class='action active']")
     public WebElement dayButton;
 
-    @FindBy(linkText = "Week")
+    @FindBy(xpath = "//span[@class='action-button__icon icon-view-week']")
     public WebElement weekButton;
 
-    @FindBy(linkText = "Month")
+    @FindBy(xpath = "(//button[@class='action-button focusable'])[8]")
     public WebElement monthButton;
 
 

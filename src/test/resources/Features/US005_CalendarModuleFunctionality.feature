@@ -27,7 +27,7 @@ Feature: Default
     Then user can see displayed Monthly calendar view
 
 
-  @B34G11-184 @calendar
+  @B34G11-184
   Scenario: US005_TC4_Verify user can create a new event under the Calendar module
     When user is on the Calendar page
     Then user checks personal radio button
