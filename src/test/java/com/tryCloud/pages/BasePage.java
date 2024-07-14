@@ -71,4 +71,5 @@ public abstract class BasePage {
         System.out.println("Navigate to "+ url);
     }
 
+
 }
