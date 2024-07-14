@@ -20,16 +20,16 @@ public class DeletedTabPage {
     @FindBy(xpath = "//span[.='Deleted']")
     public WebElement deletedButtonSort;
 
-    @FindBy(id = "fileList")
+    @FindBy(xpath = "//tbody[@id='fileList']/tr")
     public List<WebElement> deletedFiles;
 
-    @FindBy(xpath = "//span[@class='icon icon-more']")
-    public List<WebElement> threeDotsIcon;
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div[14]/table/tbody/tr[1]/td[2]/a/span[2]/a[2]")
+    public WebElement threeDotsIcon;
 
-    @FindBy(xpath = "//li[@class=' action-delete-container']")
+    @FindBy(xpath = "//a[@data-action='Delete']")
     public WebElement deletePermanentlyButton;
 
-    @FindBy(xpath = "//span[@class=\"icon icon-history\"]")
+    @FindBy(xpath = "//span[.=' Restore']")
     public List<WebElement> restoreButton;
 
     @FindBy(xpath = "//a[.=\"All files\"]")
