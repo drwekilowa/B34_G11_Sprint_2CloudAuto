@@ -1,5 +1,6 @@
 package com.tryCloud.step_definitions;
 
+import com.tryCloud.utilities.ConfigurationReader;
 import com.tryCloud.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -14,6 +15,8 @@ public class Hooks {
     @Before(order = 1)
     public void setupMethod(){
         System.out.println("--> @Before: Running before each SCENARIO");
+
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
     }
     // @Before(value = "@login",order = 2)

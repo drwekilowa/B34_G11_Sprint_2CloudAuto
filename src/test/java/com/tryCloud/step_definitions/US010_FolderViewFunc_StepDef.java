@@ -9,6 +9,7 @@ public class US010_FolderViewFunc_StepDef extends BasePage {
     @When("User clicks on the folder icon")
     public void user_clicks_on_the_folder_icon() {
     fileModule.click();
+
     }
     @When("User clicks Name above the files.")
     public void user_clicks_name_above_the_files() {
