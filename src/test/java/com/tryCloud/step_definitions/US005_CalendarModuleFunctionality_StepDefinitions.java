@@ -78,12 +78,14 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
 
     @When("user is on the Calendar page")
     public void user_is_on_the_calendar_page() {
-        calendarMenuButton.click();
+        calendarLinkModule.click();
+
     }
 
     @Then("user checks personal radio button")
     public void user_checks_personal_radio_button() {
-        personalRadioButtonSelection.click();
+       // personalRadioButtonSelection.click();
+        BrowserUtils.waitFor(3);
 
     }
 
@@ -95,12 +97,14 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
     @Then("user passes event name in Event title input")
     public void user_passes_event_name_in_event_title_input() {
         newEventInputText.sendKeys("Awesome Meeting");
+        BrowserUtils.waitFor(3);
 
     }
     @Then("user selects from event date and time")
     public void user_selects_from_event_date_and_time() {
         fromSelectButton.click();
         fromDateSelection.click();
+        BrowserUtils.waitFor(3);
         fromHourSelection.click();
         fromMinutesSelection.click();
         fromTimeOfDaySelection.click();
@@ -109,6 +113,7 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
     @Then("user selects to event date and time")
     public void user_selects_to_event_date_and_time() {
         toSelectButton.click();
+        BrowserUtils.waitFor(3);
         toDateSelection.click();
         toHourSelection.click();
         toMinutesSelection.click();

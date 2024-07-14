@@ -86,10 +86,10 @@ public class CalendarModulePage {
 
     // Viewing created EVENT with Monthly Calendar Mode
 
-    @FindBy(xpath = "//button[@class='icon action-item__menutoggle icon-view-week']")
+    @FindBy(xpath = "//button[@aria-label='Actions']")
     public WebElement calendarMenuButtonEvent;
 
-    @FindBy(linkText = "Month")
+    @FindBy(xpath = "(//button[@class='action-button focusable'])[8]")
     public WebElement monthButtonEvent;
 
 
