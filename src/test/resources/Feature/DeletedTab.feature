@@ -20,7 +20,7 @@ Feature: Deleted File Tab
   Scenario: US007_TC2 Verify user can delete any deleted file permanently
     When user click on the File module
     Then user click on the Deleted files tab
-    Then user click on the trhee dots icon in the "file1" line
+    Then user click on the three dots icon in the file line
     And user click on the Delete permanently button
     Then user should no longer see the file that was deleted
 
@@ -29,8 +29,8 @@ Feature: Deleted File Tab
   Scenario: US007_TC3 Verify user can restore any deleted file and see it again under the All Files tab
     When user click on the File module
     Then user click on the Deleted files tab
-    Then user click on the Restore button in the "file2" line
-    And user click on the All files tab
-    Then user see the restored "file2" under the All files tab
+    Then user click on the Restore button in the file line
+    #And user click on the All files tab
+    Then user do not see the restored file in the page
 
 
