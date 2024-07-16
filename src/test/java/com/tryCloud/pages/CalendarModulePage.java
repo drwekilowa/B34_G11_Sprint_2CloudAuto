@@ -23,11 +23,20 @@ public class CalendarModulePage {
     @FindBy(xpath = "//li[@class='action active']")
     public WebElement dayButton;
 
+    @FindBy(xpath = "//*[text()='Day']")
+    public WebElement dayVerifyText;
+
     @FindBy(xpath = "//span[@class='action-button__icon icon-view-week']")
     public WebElement weekButton;
 
+    @FindBy(xpath = "//*[text()='Week']")
+    public WebElement weekVerifyText;
+
     @FindBy(xpath = "(//button[@class='action-button focusable'])[8]")
     public WebElement monthButton;
+
+    @FindBy(xpath = "//*[text()='Month']")
+    public WebElement monthVerifyText;
 
 
     @FindBy(xpath = "(//div[@class='app-navigation-entry__icon-bullet-disabled'])[1]")

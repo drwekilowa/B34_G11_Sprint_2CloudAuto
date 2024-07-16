@@ -3,8 +3,10 @@ package com.tryCloud.step_definitions;
 import com.tryCloud.pages.BasePage;
 import com.tryCloud.pages.CalendarModulePage;
 import com.tryCloud.utilities.BrowserUtils;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarModulePage {
 
@@ -26,6 +28,11 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
         dayButton.click();
         BrowserUtils.waitFor(3);
 
+        String expectedText = "Day";
+        String actualText = dayVerifyText.getText();
+
+        Assert.assertEquals(actualText, expectedText);
+
     }
 
 
@@ -43,10 +50,16 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
     public void user_clicks_on_the_weekly_button() {
         weekButton.click();
         BrowserUtils.waitFor(3);
+
     }
 
     @Then("user can see displayed Weekly calendar view")
     public void user_can_see_displayed_weekly_calendar_view() {
+
+        String expectedText = "Week";
+        String actualText = weekVerifyText.getText();
+
+        Assert.assertEquals(actualText, expectedText);
 
     }
 
@@ -69,6 +82,11 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
     }
     @Then("user can see displayed Monthly calendar view")
     public void user_can_see_displayed_monthly_calendar_view() {
+
+        String expectedText = "Month";
+        String actualText = monthVerifyText.getText();
+
+        Assert.assertEquals(actualText, expectedText);
 
     }
 
@@ -131,5 +149,18 @@ public class US005_CalendarModuleFunctionality_StepDefinitions extends CalendarM
         monthButtonEvent.click();
 
     }
+/*
+    @When("user is on {string} calendar view")
+    public void userIsOnCalendarView(String calendarModesDay) {
+    }
 
+    @And("user clicks on the {string} button")
+    public void userClicksOnTheButton(String calendarModesWeek) {
+    }
+
+    @Then("user can see displayed {string} calendar view")
+    public void userCanSeeDisplayedCalendarView(String calendarModesMonth) {
+    }
+
+ */
 }
