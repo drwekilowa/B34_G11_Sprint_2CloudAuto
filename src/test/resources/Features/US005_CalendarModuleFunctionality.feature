@@ -27,13 +27,13 @@ Feature: Default
     Then user can see displayed Monthly calendar view
 
 
-  @B34G11-184
+  @B34G11-184 @calendar
   Scenario: US005_TC4_Verify user can create a new event under the Calendar module
     When user is on the Calendar page
+    Then user checks personal radio button
     Then user clicks on the New event button
     Then user passes event name in Event title input
-    And user selects timezone from from timezone dropdown
-    And user selects timezone from to timezone dropdown
-    And user checks the All day box
+    And user selects from event date and time
+    And user selects to event date and time
     And user clicks to the Save button
     Then user should be able to create a new event under the Calendar module and see it on the related day through the Monthly Calendar view
