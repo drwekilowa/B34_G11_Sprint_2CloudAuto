@@ -15,28 +15,29 @@ Feature: Default
 		  And user open the file on the files module
 		 Then user sees the details side page of the file
 		  Examples:
-		  |module|
-		  |Files|
-		  |Photos|
-		  |Activity|
-		  |Talk|
-		  |Contacts|
-		  |Circles|
-		  |Calendar|
-		  |Deck|	
+			  | module   |
+			  | files    |
+			  | photos   |
+			  | activity |
+			  | spreed   |
+			  | contacts |
+			  | circles  |
+			  | calendar |
+			  | deck     |
 
 	
 	@B34G11-151
 	Scenario Outline: US009 Verify user navigate to the Dashboard page whenever clicking the App icon 
 		When user clicks "<module>" module
 		  And user navigate to the Dashboard page and click it.
+		  Then user sees the Dashboard page
 		  Examples:
 		  |module|
-		  |Files|
-		  |Photos|
-		  |Activity|
-		  |Talk|
-		  |Contacts|
-		  |Circles|
-		  |Calendar|
-		  |Deck|
+		  |files|
+		  |photos|
+		  |activity|
+		  |spreed|
+		  |contacts|
+		  |circles|
+		  |calendar|
+		  |deck|
