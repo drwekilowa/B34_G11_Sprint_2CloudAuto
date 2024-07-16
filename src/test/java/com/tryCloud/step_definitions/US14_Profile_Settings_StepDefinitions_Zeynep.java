@@ -39,7 +39,7 @@ public class US14_Profile_Settings_StepDefinitions_Zeynep {
     @Then("the Email input box should display {string}")
     public void the_email_input_box_should_display(String string) {
         WebElement expectedEmail = profileSettingsPage.emailBox;
-        String emailIsDisplayed = expectedEmail.getAttribute(string);
+
 
         Assert.assertTrue(expectedEmail.isDisplayed());
 
