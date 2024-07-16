@@ -39,9 +39,6 @@ public class CalendarModulePage {
     public WebElement monthVerifyText;
 
 
-    @FindBy(xpath = "(//div[@class='app-navigation-entry__icon-bullet-disabled'])[1]")
-    public WebElement personalRadioButtonSelection;
-
 
     //Finding NEW EVENT Locators -----------------------------
 
@@ -100,6 +97,9 @@ public class CalendarModulePage {
 
     @FindBy(xpath = "(//button[@class='action-button focusable'])[8]")
     public WebElement monthButtonEvent;
+
+    @FindBy(xpath = "//*[text()='Awesome Meeting']")
+    public WebElement createdEventVerifyText;
 
 
 
