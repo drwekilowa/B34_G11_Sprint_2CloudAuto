@@ -58,8 +58,6 @@ public class US010_FolderViewFunc_StepDef extends BasePage {
             files.add(each.getText().replace("< " ,""));
         }
         List<String> orderFileBySize = new ArrayList<>(files);
-        System.out.println("files = " + files);
-        System.out.println("orderFileBySize = " + orderFileBySize);
         Assert.assertEquals(files , orderFileBySize);
 
         us010FilesPage.sizeButton.click();
@@ -69,8 +67,6 @@ public class US010_FolderViewFunc_StepDef extends BasePage {
             files.add(each.getText().replace("< " ,""));
         }
         Collections.reverse(orderFileBySize);
-        System.out.println("files = " + files);
-        System.out.println("orderFileBySize = " + orderFileBySize);
         Assert.assertEquals(files, orderFileBySize);
 
     }
@@ -88,8 +84,6 @@ public class US010_FolderViewFunc_StepDef extends BasePage {
             files.add(each.getText());
         }
         List<String> orderFileByDate = new ArrayList<>(files);
-        System.out.println("files = " + files);
-        System.out.println("orderFileByDate = " + orderFileByDate);
         Assert.assertEquals(files , orderFileByDate);
 
         us010FilesPage.modifiedButton.click();
@@ -99,8 +93,6 @@ public class US010_FolderViewFunc_StepDef extends BasePage {
             files.add(each.getText());
         }
         Collections.reverse(orderFileByDate);
-        System.out.println("files = " + files);
-        System.out.println("orderFileByDate = " + orderFileByDate);
         Assert.assertEquals(files , orderFileByDate);
     }
 
