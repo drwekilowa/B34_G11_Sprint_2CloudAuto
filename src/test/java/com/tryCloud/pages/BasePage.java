@@ -16,6 +16,8 @@ public abstract class BasePage {
     @FindBy(xpath = "//li[@data-id='files']")
     public WebElement fileLinkModule;
 
+
+
     @FindBy(xpath = "//a[@aria-label='Dashboard']")
     public WebElement dashboardLinkModule;
 

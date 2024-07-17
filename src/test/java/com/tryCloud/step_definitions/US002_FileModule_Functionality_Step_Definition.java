@@ -44,36 +44,41 @@ public class US002_FileModule_Functionality_Step_Definition {
 
         actions.click(fileModulePage.uploadFileOption).perform();
 
+        //  fileModulePage.uploadFile.sendKeys("C:\\Users\\Azat\\Desktop\\Document.txt");
+
     }
 
     @Then("user chooses a file from local computer and click open button")
     public void user_chooses_a_file_from_local_computer_and_click_open_button() {
 
-        // Specify the path to the file you want to upload
+        // Specify the path to the file you want to upload using method
+        BrowserUtils.sleep(2);
+        fileModulePage.uploadFileDynamic("Document.txt");
 
 
         // Upload the file
-        robot.setAutoDelay(2000);
 
-        StringSelection stringSelection = new StringSelection("C:\\Users\\Azat\\Desktop\\Document.txt");
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-
-        robot.setAutoDelay(2000);
-
-        // copy and pass file to upload
-
-        robot.keyPress(KeyEvent.VK_CONTROL);
-        robot.keyPress(KeyEvent.VK_V);
-
-        robot.keyRelease(KeyEvent.VK_CONTROL);
-        robot.keyRelease(KeyEvent.VK_V);
-
-        robot.setAutoDelay(3000);
-
-// clicks open button to upload the file
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
-
+//        robot.setAutoDelay(2000);
+//
+//        StringSelection stringSelection = new StringSelection("C:\\Users\\Azat\\Desktop\\Document.txt");
+//        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+//
+//        robot.setAutoDelay(2000);
+//
+//        // copy and pass file to upload
+//
+//        robot.keyPress(KeyEvent.VK_CONTROL);
+//        robot.keyPress(KeyEvent.VK_V);
+//
+//        robot.keyRelease(KeyEvent.VK_CONTROL);
+//        robot.keyRelease(KeyEvent.VK_V);
+//
+//        robot.setAutoDelay(3000);
+//
+//        // clicks open button to upload the file
+//        robot.keyPress(KeyEvent.VK_ENTER);
+//        robot.keyRelease(KeyEvent.VK_ENTER);
+//
 
     }
 
