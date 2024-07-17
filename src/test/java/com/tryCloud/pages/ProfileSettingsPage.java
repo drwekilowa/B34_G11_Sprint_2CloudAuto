@@ -35,7 +35,7 @@ public class ProfileSettingsPage {
     @FindBy(id = "displayname")
     public WebElement displayName;
 
-    @FindBy(xpath = "//span[@title='User12']")
+    @FindBy(xpath = "//span[@title='User7']")
     public WebElement user_Display;
 
     //Scenario 3  locators
