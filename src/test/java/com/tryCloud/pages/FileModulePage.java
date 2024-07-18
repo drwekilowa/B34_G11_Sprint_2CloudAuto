@@ -1,5 +1,6 @@
 package com.tryCloud.pages;
 
+import com.tryCloud.utilities.BrowserUtils;
 import com.tryCloud.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +17,9 @@ public FileModulePage () {
 }
     @FindBy(xpath = "//span[.='New']/..")
   public WebElement plusIcon;
+
+    @FindBy(id = "file_upload_start")
+    public WebElement uploadFile;
 
 
 @FindBy (xpath = "//span[.='Upload file']")
@@ -53,4 +57,16 @@ public FileModulePage () {
 
 @FindBy(xpath = "//span[@class='icon icon-more']")
     public WebElement documentTxtDot;
+
+
+
+
+    public void uploadFileDynamic(String fileName) {
+        String fileSeparator = System.getProperty("file.separator");
+        String path = System.getProperty("user.dir") + fileSeparator + "src/test/resources/uploadedFiles" + fileSeparator + fileName;
+        BrowserUtils.sleep(3);
+       uploadFile.sendKeys(path);
+       BrowserUtils.sleep(2);
+
+    }
 }

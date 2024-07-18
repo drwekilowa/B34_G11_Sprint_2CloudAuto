@@ -32,7 +32,7 @@ public class Hooks {
 
         }
         System.out.println("-->@After: Running after each SCENARIO");
-        Driver.closeDriver();
+       Driver.closeDriver();
     }
     //  @BeforeStep
     public void setupStep(){
