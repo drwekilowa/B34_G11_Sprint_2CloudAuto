@@ -4,11 +4,15 @@ import com.tryCloud.pages.BasePage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class US010_FolderViewFunc_StepDef extends BasePage{
 
 
     @When("User clicks on the folder icon")
-    public void user_clicks_on_the_folder_icon() {fileLinkModule.click();
+    public void user_clicks_on_the_folder_icon()
+    {
+    fileLinkModule.click();
+
     }
     @When("User clicks Name above the files.")
     public void user_clicks_name_above_the_files() {
