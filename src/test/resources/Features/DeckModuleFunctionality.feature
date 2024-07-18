@@ -10,6 +10,7 @@ Feature: Deck Module Functionality
   @AddBoardDeck
   Scenario: User can create a new board under deck module and modify
     When User clicks on deck button
+    And User opens deck tab
     And User clicks add board button
     And User types a title
     And User can see new board
