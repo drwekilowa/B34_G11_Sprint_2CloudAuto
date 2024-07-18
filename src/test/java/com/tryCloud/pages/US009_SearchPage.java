@@ -5,13 +5,16 @@ import com.tryCloud.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.html.HTMLInputElement;
 
 import java.util.List;
 
 public class US009_SearchPage {
 
 
-   public US009_SearchPage() {
+    public HTMLInputElement generalSearchBtn;
+
+    public US009_SearchPage() {
 
        PageFactory.initElements(Driver.getDriver(), this);
 
