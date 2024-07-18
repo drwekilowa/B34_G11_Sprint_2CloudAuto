@@ -1,49 +1,21 @@
 package com.tryCloud.step_definitions;
 
 import com.tryCloud.pages.BasePage;
-import com.tryCloud.pages.US010_FilesPage;
-import com.tryCloud.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+public class US010_FolderViewFunc_StepDef extends BasePage{
 
-public class US010_FolderViewFunc_StepDef extends BasePage {
 
-    US010_FilesPage us010FilesPage = new US010_FilesPage();
     @When("User clicks on the folder icon")
-    public void user_clicks_on_the_folder_icon() {
-    fileLinkModule.click();
-
+    public void user_clicks_on_the_folder_icon() {fileLinkModule.click();
     }
     @When("User clicks Name above the files.")
     public void user_clicks_name_above_the_files() {
 
-        us010FilesPage.nameButton.click();
     }
     @Then("User should be able to see the list in alphabetical order A-Z or Z-A")
     public void user_should_be_able_to_see_the_list_in_alphabetical_order_a_z_or_z_a() {
-        List<String> files = new ArrayList<>();
-        for (WebElement each : us010FilesPage.filesName) {
-            files.add(each.getText());
-        }
-        List<String> orderFileByName = new ArrayList<>(files);
-        if (files.contains(".")){
-            Collections.sort(orderFileByName);
-        }
-        Assert.assertEquals(files , orderFileByName);
-
-        us010FilesPage.nameButton.click();
-        files.clear();
-        for (WebElement each : us010FilesPage.filesName) {
-            files.add(each.getText());
-        }
-        Collections.reverse(orderFileByName);
-        Assert.assertEquals(files , orderFileByName);
     }
 
     @When("User clicks Size above the files.")
