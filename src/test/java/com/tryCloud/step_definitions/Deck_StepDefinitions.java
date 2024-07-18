@@ -14,7 +14,7 @@ public class Deck_StepDefinitions {
 
     @And("User clicks add board button")
     public void userClicksAddBoardButton() {
-
+        deckModulePage.addBoard.click();
     }
 
     @And("User types a title")
@@ -33,5 +33,6 @@ public class Deck_StepDefinitions {
 
     @And("User opens deck tab")
     public void userOpensDeckTab() {
+        deckModulePage.boardList.click();
     }
 }

@@ -13,5 +13,12 @@ public class DeckModulePage extends BasePage {
     @FindBy(id="Deck")
     public WebElement deckButton;
 
+    @FindBy(xpath = "//ul[@class='app-navigation__list']")
+    public WebElement boardList;
+
+    @FindBy(xpath = "//a[.//span[@title='Add board']]")
+    public WebElement addBoard;
+
+   
 
 }
