@@ -1,12 +1,21 @@
 package com.tryCloud.step_definitions;
 
 import com.tryCloud.pages.BasePage;
+import com.tryCloud.pages.US010_FilesPage;
+import com.tryCloud.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 
 public class US010_FolderViewFunc_StepDef extends BasePage{
 
+    US010_FilesPage us010FilesPage = new US010_FilesPage();
 
     @When("User clicks on the folder icon")
     public void user_clicks_on_the_folder_icon()
@@ -24,9 +33,11 @@ public class US010_FolderViewFunc_StepDef extends BasePage{
 
     @When("User clicks Size above the files.")
     public void user_clicks_size_above_the_files() {
-        us010FilesPage.sizeButton.click();
+       us010FilesPage.sizeButton.click();
 
     }
+
+
     @Then("User should be able to see the list in order on the sizes")
     public void user_should_be_able_to_see_the_list_in_order_on_the_sizes() {
         List<String> files = new ArrayList<>();

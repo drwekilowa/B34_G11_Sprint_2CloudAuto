@@ -3,6 +3,7 @@ package com.tryCloud.step_definitions;
 import com.tryCloud.utilities.ConfigurationReader;
 import com.tryCloud.utilities.Driver;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
@@ -39,7 +40,7 @@ public class Hooks {
         System.out.println("--> @BeforeStep: running before each step");
 
     }
-    //  @AfterStep
+      @AfterStep
     public void tearDownStep(){
         System.out.println("--> @AfterStep: Running after each step");
     }
